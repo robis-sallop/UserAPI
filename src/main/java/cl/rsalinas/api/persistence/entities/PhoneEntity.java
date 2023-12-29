@@ -25,4 +25,46 @@ public class PhoneEntity {
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
     private UserEntity users;
+
+	public long getPhone_id() {
+		return phone_id;
+	}
+
+	public void setPhone_id(long phone_id) {
+		this.phone_id = phone_id;
+	}
+
+	public Integer getNumber() {
+		return number;
+	}
+
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+
+	public Integer getCitycode() {
+		return citycode;
+	}
+
+	public void setCitycode(Integer citycode) {
+		this.citycode = citycode;
+	}
+
+	public Integer getCountrycode() {
+		return countrycode;
+	}
+
+	public void setCountrycode(Integer countrycode) {
+		this.countrycode = countrycode;
+	}
+
+	public UserEntity getUsers() {
+		return users;
+	}
+
+	public void setUsers(UserEntity users) {
+		this.users = users;
+	}
+    
+    
 }
