@@ -2,6 +2,7 @@ package cl.rsalinas.api.persistence.entities;
 
 import javax.persistence.*;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -11,6 +12,9 @@ import java.util.List;
 @Data
 @Entity
 @Table(name="USERS")
+@Schema(
+		description = "Este es el User Entity"
+)
 public class UserEntity {
 
     @Id

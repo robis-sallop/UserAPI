@@ -53,7 +53,7 @@ Mediante metodo POST pueden crear este usuario
     }
 
 # Detalle de los Sistemas
-Java 8 Spring-Boot 2.6.6
+Java 11 Spring-Boot 2.3.4.RELEASE
 Base de datos H2
 Maven 4
 
@@ -77,3 +77,7 @@ https://www.postman.com/speeding-shadow-810108/workspace/userapi/collection/2026
     --request POST \
     --data '{"name": "Juan Rodriguez", "email": "juan@rodriguez.org", "password": "Hunter2$", "phones": [{ "number": 1234567, "citycode": 1, "countrycode": 57 }, { "number": 966605535, "citycode": 9, "countrycode": 56 }], "active": true}' \
     http://localhost:8080/api/users
+
+# SWAGGER
+
+http://localhost:8080/swagger-ui/index.html

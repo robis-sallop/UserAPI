@@ -1,5 +1,6 @@
 package cl.rsalinas.api.persistence.entities;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -8,6 +9,9 @@ import java.util.List;
 @Data
 @Entity
 @Table(name="PHONES")
+@Schema(
+		description = "Este es el Phone Entity"
+)
 public class PhoneEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
